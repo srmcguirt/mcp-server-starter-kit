@@ -1,7 +1,7 @@
 {
-  "name": "@aipackages/mcp-server-starter",
+  "name": "@wireforge/mcp-server-starter",
   "version": "1.0.0",
-  "description": "Production-ready MCP server boilerplate — auth, rate limiting, error handling, Docker deploy",
+  "description": "WireForge MCP Server Starter Kit — Production-ready boilerplate with auth, rate limiting, error handling, Docker deploy",
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -14,7 +14,7 @@
     "typescript",
     "anthropic"
   ],
-  "author": "AI Packages",
+  "author": "WireForge",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "typescript": "^5.3.0",
     "tsx": "^4.7.0",
-    "vitest": "^1.2.0",
+    "vitest": "^3.1.0",
     "@types/node": "^20.11.0",
     "eslint": "^8.56.0"
   },
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ai-packages/mcp-server-starter"
+    "url": "https://github.com/srmcguirt/mcp-server-starter-kit"
   },
-  "homepage": "https://github.com/ai-packages/mcp-server-starter#readme"
+  "homepage": "https://github.com/srmcguirt/mcp-server-starter-kit#readme"
 }
