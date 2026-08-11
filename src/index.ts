@@ -59,7 +59,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 
 // ─── Tool execution ──────────────────────────────────────────────────────────
 
-server.setRequestHandler(CallToolRequestSchema, async (request) => {
+server.setRequestHandler(CallToolRequestSchema, async (request): Promise<any> => {
   const { name, arguments: args } = request.params;
 
   logger.info(`Tool called: ${name}`, { args });
