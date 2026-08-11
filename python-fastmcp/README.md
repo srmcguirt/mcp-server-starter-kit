@@ -2,7 +2,7 @@
 
 Production-ready MCP server boilerplate in Python using [FastMCP](https://github.com/jlowin/fastmcp).
 
-> Part of the **MCPForge MCP Server Starter Kit** premium tier.
+> Part of the **WireForge MCP Server Starter Kit** premium tier.
 
 ---
 
