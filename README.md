@@ -3,9 +3,7 @@
 **Production-ready Model Context Protocol (MCP) server boilerplate.**  
 Ship your first MCP server in minutes, not days.
 
-[![npm version](https://img.shields.io/npm/v/@wireforge/mcp-server-starter.svg)](https://www.npmjs.com/package/@wireforge/mcp-server-starter)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white) ![Node](https://img.shields.io/badge/Node-%3E%3D18-339933?logo=node.js&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Compatible-8A2BE2)
 
 > 💎 **Premium edition** with Python (FastMCP) version, Railway/Render deploy configs, auth patterns, and 1-on-1 setup support → [Get it on Gumroad →](https://srmcguirt.gumroad.com)
 
