@@ -3,11 +3,11 @@
 **Production-ready Model Context Protocol (MCP) server boilerplate.**  
 Ship your first MCP server in minutes, not days.
 
-[![npm version](https://img.shields.io/npm/v/@aipackages/mcp-server-starter.svg)](https://www.npmjs.com/package/@aipackages/mcp-server-starter)
+[![npm version](https://img.shields.io/npm/v/@wireforge/mcp-server-starter.svg)](https://www.npmjs.com/package/@wireforge/mcp-server-starter)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> 💎 **Premium edition** with Python (FastMCP) version, Railway/Render deploy configs, auth patterns, and 1-on-1 setup support → [Get it on Gumroad →](https://gumroad.com)
+> 💎 **Premium edition** with Python (FastMCP) version, Railway/Render deploy configs, auth patterns, and 1-on-1 setup support → [Get it on Gumroad →](https://srmcguirt.gumroad.com)
 
 ---
 
@@ -53,7 +53,7 @@ This starter kit solves all of that from day one.
 
 ```bash
 # Clone and rename
-git clone https://github.com/ai-packages/mcp-server-starter my-mcp-server
+git clone https://github.com/srmcguirt/mcp-server-starter-kit my-mcp-server
 cd my-mcp-server
 
 # Install dependencies
@@ -69,7 +69,7 @@ npm run dev
 ### Option 2: Scaffold with npx
 
 ```bash
-npx @aipackages/mcp-server-starter init my-server-name
+npx @wireforge/mcp-server-starter init my-server-name
 cd my-server-name
 npm install && npm run dev
 ```
@@ -77,7 +77,7 @@ npm install && npm run dev
 ### Option 3: Install as a library
 
 ```bash
-npm install @aipackages/mcp-server-starter
+npm install @wireforge/mcp-server-starter
 ```
 
 ---
@@ -273,7 +273,7 @@ The open source version is a solid foundation. The **Gumroad premium download** 
 - ✅ 6 real-world example servers (GitHub, Notion, Slack, Postgres, filesystem, web search)
 - ✅ Commercial license (use in client work and products)
 
-**[Get the premium edition →](https://gumroad.com)**
+**[Get the premium edition →](https://srmcguirt.gumroad.com)**
 
 ---
 
@@ -302,4 +302,4 @@ PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT — free for personal and open source use.  
-Commercial license (client work, products, resale) included in the [Premium Edition on Gumroad](https://gumroad.com).
+Commercial license (client work, products, resale) included in the [Premium Edition on Gumroad](https://srmcguirt.gumroad.com).
