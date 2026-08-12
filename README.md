@@ -308,4 +308,4 @@ Commercial license (client work, products, resale) included in the [Premium Edit
 
 Get a free sample prompt + updates when new tools ship:
 
-**→ [wireforge.fellwork.workers.dev](https://wireforge.fellwork.workers.dev)**
+**→ [srmcguirt.dev](https://srmcguirt.dev)**
