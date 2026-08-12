@@ -1,6 +1,6 @@
 # 🚀 MCP Server Starter Kit
 
-**Production-ready Model Context Protocol (MCP) server boilerplate.** 
+**Production-ready Model Context Protocol (MCP) server boilerplate.**  
 Ship your first MCP server in minutes, not days.
 
 [![CI](https://github.com/srmcguirt/mcp-server-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/srmcguirt/mcp-server-starter-kit/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white) ![Node](https://img.shields.io/badge/Node-%3E%3D18-339933?logo=node.js&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Compatible-8A2BE2)
@@ -91,29 +91,29 @@ import { toolResult } from '../lib/error-handler.js';
 import type { MCPTool } from '../types.js';
 
 const MyInputSchema = z.object({
- query: z.string().min(1).max(500),
- limit: z.number().int().positive().max(100).default(10),
+  query: z.string().min(1).max(500),
+  limit: z.number().int().positive().max(100).default(10),
 });
 
 export const myTool: MCPTool = {
- name: 'my_tool',
- description: 'Search for something and return results. Be specific about what this does — the AI reads this description.',
- inputSchema: {
- type: 'object',
- properties: {
- query: { type: 'string', description: 'The search query' },
- limit: { type: 'number', description: 'Max results to return', default: 10 },
- },
- required: ['query'],
- },
- async execute(args) {
- const { query, limit } = MyInputSchema.parse(args);
+  name: 'my_tool',
+  description: 'Search for something and return results. Be specific about what this does — the AI reads this description.',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      query: { type: 'string', description: 'The search query' },
+      limit: { type: 'number', description: 'Max results to return', default: 10 },
+    },
+    required: ['query'],
+  },
+  async execute(args) {
+    const { query, limit } = MyInputSchema.parse(args);
 
- // Your implementation here
- const results = await myApi.search(query, { limit });
+    // Your implementation here
+    const results = await myApi.search(query, { limit });
 
- return toolResult(JSON.stringify(results, null, 2));
- },
+    return toolResult(JSON.stringify(results, null, 2));
+  },
 };
 ```
 
@@ -123,9 +123,9 @@ Then register it in `src/tools/index.ts`:
 import { myTool } from './my-tool.js';
 
 export const tools: MCPTool[] = [
- echoTool,
- fetchUrlTool,
- myTool, // 👈 Add here
+  echoTool,
+  fetchUrlTool,
+  myTool, // 👈 Add here
 ];
 ```
 
@@ -145,15 +145,15 @@ Or manually add to `~/Library/Application Support/Claude/claude_desktop_config.j
 
 ```json
 {
- "mcpServers": {
- "my-server-name": {
- "command": "node",
- "args": ["/absolute/path/to/my-mcp-server/dist/index.js"],
- "env": {
- "MY_API_KEY": "your-key-here"
- }
- }
- }
+  "mcpServers": {
+    "my-server-name": {
+      "command": "node",
+      "args": ["/absolute/path/to/my-mcp-server/dist/index.js"],
+      "env": {
+        "MY_API_KEY": "your-key-here"
+      }
+    }
+  }
 }
 ```
 
@@ -165,14 +165,14 @@ Add to your editor's MCP settings:
 
 ```json
 {
- "mcp": {
- "servers": {
- "my-server-name": {
- "command": "node",
- "args": ["/absolute/path/to/my-mcp-server/dist/index.js"]
- }
- }
- }
+  "mcp": {
+    "servers": {
+      "my-server-name": {
+        "command": "node",
+        "args": ["/absolute/path/to/my-mcp-server/dist/index.js"]
+      }
+    }
+  }
 }
 ```
 
@@ -196,24 +196,24 @@ docker run -it --env-file .env my-mcp-server
 ```
 mcp-server-starter/
 ├── src/
-│ ├── index.ts # Server entry point — wire everything together here
-│ ├── types.ts # MCPTool interface and shared types
-│ ├── lib/
-│ │ ├── logger.ts # Winston logger — always logs to stderr
-│ │ ├── rate-limiter.ts # Token-bucket rate limiter
-│ │ ├── env.ts # Environment variable validation (Zod)
-│ │ └── error-handler.ts # Centralized error handling + toolResult helpers
-│ └── tools/
-│ ├── index.ts # Tool registry — add your tools here
-│ ├── echo.ts # Example: simple string echo
-│ └── fetch-url.ts # Example: HTTP fetch with timeout + size limit
+│   ├── index.ts              # Server entry point — wire everything together here
+│   ├── types.ts              # MCPTool interface and shared types
+│   ├── lib/
+│   │   ├── logger.ts         # Winston logger — always logs to stderr
+│   │   ├── rate-limiter.ts   # Token-bucket rate limiter
+│   │   ├── env.ts            # Environment variable validation (Zod)
+│   │   └── error-handler.ts  # Centralized error handling + toolResult helpers
+│   └── tools/
+│       ├── index.ts          # Tool registry — add your tools here
+│       ├── echo.ts           # Example: simple string echo
+│       └── fetch-url.ts      # Example: HTTP fetch with timeout + size limit
 ├── docker/
-│ ├── Dockerfile # Multi-stage production build
-│ └── docker-compose.yml # Local development + production compose
+│   ├── Dockerfile            # Multi-stage production build
+│   └── docker-compose.yml    # Local development + production compose
 ├── scripts/
-│ └── add-to-claude.sh # Auto-add to Claude Desktop config
-├── .env.example # Required environment variables
-├── tsconfig.json # Strict TypeScript config
+│   └── add-to-claude.sh      # Auto-add to Claude Desktop config
+├── .env.example              # Required environment variables
+├── tsconfig.json             # Strict TypeScript config
 └── package.json
 ```
 
@@ -246,7 +246,7 @@ const { query } = MySchema.parse(args); // throws McpError on invalid input
 ```typescript
 // ❌ WRONG — unhandled exceptions crash the server
 async execute(args) {
- return await riskyOperation(args);
+  return await riskyOperation(args);
 }
 
 // ✅ CORRECT — errors logged + safe message returned to AI
@@ -277,16 +277,16 @@ The open source version is a solid foundation. The **Gumroad premium download** 
 
 ## FAQ
 
-**Q: Why TypeScript and not JavaScript?** 
+**Q: Why TypeScript and not JavaScript?**  
 A: MCP tool schemas need to match your implementation exactly. TypeScript catches mismatches at build time, not at 2am when an AI passes unexpected input.
 
-**Q: Why log to stderr?** 
+**Q: Why log to stderr?**  
 A: MCP uses stdio transport — stdout carries the JSON-RPC protocol. Anything you write to stdout that isn't valid MCP JSON will corrupt the connection. The logger in this kit always writes to stderr.
 
-**Q: Can I use this with Python?** 
+**Q: Can I use this with Python?**  
 A: The Python/FastMCP version is in the premium edition. The patterns are identical — just in Python.
 
-**Q: Is this compatible with all MCP clients?** 
+**Q: Is this compatible with all MCP clients?**  
 A: Yes. Uses the official `@modelcontextprotocol/sdk`. Tested with Claude Desktop, Cursor, Cline, and Windsurf.
 
 ---
@@ -299,7 +299,7 @@ PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-MIT — free for personal and open source use. 
+MIT — free for personal and open source use.  
 Commercial license (client work, products, resale) included in the [Premium Edition on Gumroad](https://srmcguirt.gumroad.com/l/mcp-starter).
 
 ---
