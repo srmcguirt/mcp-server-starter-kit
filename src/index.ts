@@ -14,7 +14,6 @@ import {
   ListToolsRequestSchema,
   McpError,
 } from '@modelcontextprotocol/sdk/types.js';
-import { z } from 'zod';
 import { logger } from './lib/logger.js';
 import { RateLimiter } from './lib/rate-limiter.js';
 import { validateEnv } from './lib/env.js';
