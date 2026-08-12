@@ -19,8 +19,8 @@ Ship your first MCP server in minutes, not days.
 | Environment variable validation (Zod) | ✅ |
 | Centralized error handling | ✅ |
 | 2 example tools (echo + fetch_url) | ✅ |
-| Docker + docker-compose | ✅ |
-| Claude Desktop auto-config script | ✅ |
+| Docker + docker-compose | 💎 Premium |
+| Claude Desktop auto-config script | 💎 Premium |
 | Unit test setup (Vitest) | ✅ |
 | Python/FastMCP version | 💎 Premium |
 | Railway one-click deploy | 💎 Premium |
@@ -180,14 +180,10 @@ Add to your editor's MCP settings:
 
 ## Deploy with Docker
 
-```bash
-# Build and run with docker-compose
-cd docker && docker-compose up --build
+The Dockerfile, docker-compose config, and the Claude Desktop auto-register
+script ship with the premium edition:
 
-# Or build manually
-docker build -f docker/Dockerfile -t my-mcp-server .
-docker run -it --env-file .env my-mcp-server
-```
+**[Get the premium edition →](https://srmcguirt.gumroad.com/l/mcp-starter)**
 
 ---
 
