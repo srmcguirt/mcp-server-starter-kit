@@ -300,7 +300,7 @@ PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT — free for personal and open source use.  
-Commercial license (client work, products, resale) included in the [Premium Edition on Gumroad](https://srmcguirt.gumroad.com).
+Commercial license (client work, products, resale) included in the [Premium Edition on Gumroad](https://srmcguirt.gumroad.com/l/mcp-starter).
 
 ---
 
@@ -308,4 +308,4 @@ Commercial license (client work, products, resale) included in the [Premium Edit
 
 Get a free sample prompt + updates when new tools ship:
 
-**→ [srmcguirt.github.io](https://srmcguirt.github.io)**
+**→ [wireforge.fellwork.workers.dev](https://wireforge.fellwork.workers.dev)**
