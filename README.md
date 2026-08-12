@@ -5,7 +5,7 @@ Ship your first MCP server in minutes, not days.
 
 [![CI](https://github.com/srmcguirt/mcp-server-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/srmcguirt/mcp-server-starter-kit/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white) ![Node](https://img.shields.io/badge/Node-%3E%3D18-339933?logo=node.js&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Compatible-8A2BE2)
 
-> 💎 **Premium edition** with Python (FastMCP) version, Railway/Render deploy configs, auth patterns, and 1-on-1 setup support → [Get it on Gumroad →](https://srmcguirt.gumroad.com)
+> 💎 **Premium edition** with Python (FastMCP) version, Railway/Render deploy configs, auth patterns, and 1-on-1 setup support → [Get it on Gumroad →](https://srmcguirt.gumroad.com/l/mcp-starter)
 
 ---
 
@@ -271,7 +271,7 @@ The open source version is a solid foundation. The **Gumroad premium download** 
 - ✅ 6 real-world example servers (GitHub, Notion, Slack, Postgres, filesystem, web search)
 - ✅ Commercial license (use in client work and products)
 
-**[Get the premium edition →](https://srmcguirt.gumroad.com)**
+**[Get the premium edition →](https://srmcguirt.gumroad.com/l/mcp-starter)**
 
 ---
 
